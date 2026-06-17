@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Redwolf Editz</title>
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+
+            <span id="themeBtn" onclick="toggleTheme()">🌙</span>
+        </div>
+
+        <div class="profile">
+            <img src="MyPic.jpeg" width="150">
+            <div>
+                <h1>Shabari.M</h1>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+        
+        <h2>Home :</h2>
+        <p> Hello Makkalea!, I'm Shabari
+            Full Stack Developer
+            Team Lead @ RD Skynet Developers</p>
+        <h2>About Me :</h2>
+        <p>Name : Shabari</p>
+        <p>Eduction : RD National Collage of arts & science</p>
+        <p>Age : 20</p>
+        <h2>Skills : </h2>
+        <p>FullStack Development</p>
+        <p>Languages : HTML, Javascript, C#, Python</p>
+        <p>Team Lead for two client's projects</p>
+        <h2>Contact Me :</h2>
+        <div class="contacts">
+            <img id="phoneIcon" src="phone.png" width="20" style="vertical-align: middle;">
+            <span>9025250249</span>
+            <span id="seperator">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <img id="emailIcon" src="email.png" width="20" style="vertical-align: middle;">
+            <span>mshabari28@gmail.com</span>
+        </div>
+        <br>
+        <p>© 2026 Shabari. All Rights Reserved</p>
+    </body>
+</html>
+
+<script>
+    let darkmode = false;
+    function toggleTheme(){
+        if(!darkmode){
+            document.body.style.backgroundColor = "#121212";
+            document.body.style.color = "white";
+
+            document.getElementById("themeBtn").innerHTML = "☀️";
+            document.getElementById("phoneIcon").src = "phone-white.png";
+            document.getElementById("emailIcon").src = "email-white.png";
+            document.querySelector(".contacts").style.color = "black";
+            document.getElementById("seperator").style.color = "white";
+            darkmode = true;
+        }
+        else{
+            document.body.style.backgroundColor = "#f4f4f4";
+            document.body.style.color = "black";
+
+            document.getElementById("themeBtn").innerHTML = "🌙";
+            document.getElementById("phoneIcon").src = "phone.png";
+            document.getElementById("emailIcon").src = "email.png";
+            document.querySelector(".contacts").style.color = "black";
+            document.getElementById("seperator").style.color = "black";
+            darkmode = false;
+        }
+    }
+</script>
