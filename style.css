@@ -77,6 +77,14 @@ span{
         margin-right: 50px;
     }
 
+    .navbar{
+        padding:15px;
+    }
+
+    .navbar a{
+        margin-right:10px;
+    }
+
     .contacts{
         display: flex;
         flex-direction: column;
