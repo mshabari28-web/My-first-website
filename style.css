@@ -60,3 +60,15 @@ span{
     font-size: 25px;
     background: none;
 }
+
+@media (max-width: 768px){
+    .profile{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img{
+        width: 120px;
+        height: 120px;
+    };
+}
