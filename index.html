@@ -37,13 +37,17 @@
         <p>Languages : HTML, Javascript, C#, Python</p>
         <p>Team Lead for two client's projects</p>
         <h2>Contact Me :</h2>
-        <div class="contacts">
-            <img id="phoneIcon" src="phone.png" width="20" style="vertical-align: middle;">
+
+        <div class="phone-contact">
+            <img id="numIcon" src="phone.png" width="20">
             <span>9025250249</span>
-            <span id="seperator">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-            <img id="emailIcon" src="email.png" width="20" style="vertical-align: middle;">
+        </div>
+
+        <div class="email-contact">
+            <img id="mailIcon" src="email.png" width="20">
             <span>mshabari28@gmail.com</span>
         </div>
+
         <br>
         <p>© 2026 Shabari. All Rights Reserved</p>
     </body>
@@ -59,7 +63,8 @@
             document.getElementById("themeBtn").innerHTML = "☀️";
             document.getElementById("phoneIcon").src = "phone-white.png";
             document.getElementById("emailIcon").src = "email-white.png";
-            document.querySelector(".contacts").style.color = "black";
+            document.querySelector(".phone-contacts").style.color = "white";
+            document.querySelector(".email-contacts").style.color = "white";
             document.getElementById("seperator").style.color = "white";
             darkmode = true;
         }
@@ -70,7 +75,8 @@
             document.getElementById("themeBtn").innerHTML = "🌙";
             document.getElementById("phoneIcon").src = "phone.png";
             document.getElementById("emailIcon").src = "email.png";
-            document.querySelector(".contacts").style.color = "black";
+            document.querySelector(".phone-contacts").style.color = "black";
+            document.querySelector(".email-contacts").style.color = "black";
             document.getElementById("seperator").style.color = "black";
             darkmode = false;
         }
