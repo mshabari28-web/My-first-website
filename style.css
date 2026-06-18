@@ -46,12 +46,10 @@ span{
     margin-right: 20px;
 }
 
-.phone-contact{
-    margin-top:40px;
-}
-
-.email-contact{
-    margin-top:20px;
+.contacts{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 #seperator{
@@ -74,7 +72,7 @@ span{
     .profile img{
         width: 120px;
         height: 120px;
-    };
+    }
 
     #themeBtn{
         margin-left: auto;
@@ -89,7 +87,6 @@ span{
         gap: 10px;
     }
 
-
     .navbar{
         padding:15px;
     }
@@ -99,9 +96,8 @@ span{
     }
 
     .contacts{
-        display: flex;
         flex-direction: column;
-        gap: 15px;
+        align-items: flex-start;
     }
 
     #seperator{
